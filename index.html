@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For Riiiiiitttsss — I'm Sorry ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <main class="card" id="card">
+    <h1 class="title">Riiiiiitttsss — I'm sorry</h1>
+    <p class="subtitle">I messed up. I care about you so much. Please forgive me.</p>
+
+    <div class="message" id="message">
+      <!-- Filled automatically -->
+    </div>
+
+    <div class="actions">
+      <button id="fakePlay" class="invisible">Start</button>
+    </div>
+
+    <footer class="note">Made with ❤️</footer>
+  </main>
+
+  <!-- embedded very small ambient loop via data URL (muted allowed) -->
+  <audio id="bg" loop crossorigin="anonymous">
+    <!-- This uses a very short generated silent mp3 so autoplay won't be blocked as 'media' 
+         (some browsers still block unmuted audio). Volume controlled in script. -->
+    <source src="data:audio/mpeg;base64,//uQZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcQCAAAAAA" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
