@@ -1,0 +1,62 @@
+:root{
+  --bg1:#3b0a13;
+  --bg2:#6f1420;
+  --accent:#ffc9d2;
+  --card:#2a0b0f88;
+  --glass: rgba(255,255,255,0.04);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,Arial}
+body{
+  background: radial-gradient(1200px 700px at 10% 10%, rgba(255,200,210,0.06), transparent 8%),
+              linear-gradient(135deg,var(--bg1),var(--bg2));
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+}
+.wrap{width:100%;max-width:900px;padding:20px}
+.card{
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg,var(--card),var(--glass));
+  border-radius:20px;
+  padding:34px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.title{
+  font-family:'Great Vibes', cursive;
+  font-size:48px;
+  margin:0 0 6px 0;
+  color:var(--accent);
+}
+.subtitle{margin:0;color:rgba(255,255,255,0.75)}
+.message{margin-top:24px;min-height:120px}
+.apology{
+  font-size:18px;
+  line-height:1.6;
+  background:linear-gradient(90deg,rgba(255,255,255,0.03),transparent);
+  padding:18px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.03)
+}
+.controls{display:flex;gap:12px;margin-top:20px}
+.btn{
+  background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.06);
+  padding:12px 18px;
+  border-radius:12px;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+.btn.ghost{background:transparent;border:1px dashed rgba(255,255,255,0.1)}
+.note{margin-top:16px;color:rgba(255,255,255,0.6);font-size:13px}
+.hearts{position:absolute;inset:0;pointer-events:none}
+.heart{position:absolute;width:36px;height:36px;opacity:0.9}
+.heart svg{width:100%;height:100%;}
+@media (max-width:520px){
+  .title{font-size:36px}
+  .apology{font-size:16px}
+  .card{padding:20px}
+}
